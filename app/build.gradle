@@ -31,3 +31,9 @@ dependencies {
 	api project(':codeeditor')
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 }
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
